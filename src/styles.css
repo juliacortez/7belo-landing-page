@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+:root{
+    --first-color: #f6b5b9;
+    --first-color-light: rgb(255, 188, 196);
+    --first-color-dark: #fc616b;
+    --second-color: #283270;
+    --second-color-light: #3b4494;
+    --second-color-dark: #191c3c;
+    --third-color: #00ad6f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}

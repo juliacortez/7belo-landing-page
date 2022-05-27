@@ -1,0 +1,348 @@
+
+.section-padding{
+    padding: 150px 0;
+}
+
+.section-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.section-description{
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+}
+
+section{
+    min-height: auto;
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    color: var(--second-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.navbar-nav a:hover,
+.navbar-brand:hover{
+    color: var(--third-color);
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    background: transparent;
+}
+
+.navbar-nav .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--third-color);
+}
+
+.container-custom{
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.container-custom-promotion{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container-custom{
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-custom{
+        width: 1340px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container-custom{
+        width: 1520px;
+    }
+}
+
+
+.benefits-card{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.benefits-content{
+    text-align: center;
+}
+
+.benefits{
+    background-color: var(--second-color);
+}
+
+.card-icon{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    color: var(--first-color);
+}
+
+.card{
+    border: 1px solid var(--first-color);
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.benefits-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: .6rem;
+    color: var(--second-color);
+}
+
+#benefits-section-description{
+    color: white;
+}
+
+#benefits-section-title{
+    color: var(--first-color);
+}
+
+.benefits-description{
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.card-style{
+    padding: 2rem;
+}
+
+.headline{
+    font-weight: 900;
+    color: var(--second-color);
+}
+
+.about-description-container{
+    width: 50%;
+}
+
+
+.benefits .card-body i{
+    font-size: 25px;
+}
+
+.card-name{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-description{
+    font-size: .9rem;
+    color: white;
+}
+
+
+.testemunials-card{
+    background: var(--second-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,.12), 0 4px 4px rgba(0,0,0,.06);
+}
+
+.testemunials-card:hover{
+    transform: scale(1.05);
+}
+
+
+.testemunial-icon{
+    font-size: 30px;
+    color: var(--first-color)
+}
+
+
+.testemunials-details{
+    text-align: center;
+    color: white;
+}
+
+.name-icon{
+    margin-left: .5rem;
+    padding-top: 1.4rem;
+}
+
+
+.home{
+    position: relative;
+    height: 100vh;
+    background-color: var(--first-color);
+    overflow: hidden;
+}
+
+@media (min-width: 1400px){  
+    .home-headline{
+        font-size: 3.2rem;
+    }
+}
+
+.home-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.home-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.home-content{
+    z-index: 1;
+}
+
+.home-content-width{
+    max-width: 550px;
+}
+
+.home-headline{
+    color: var(--second-color);
+    font-weight: 800;
+}
+
+.home-scroll-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.home-scroll-btn .bi{
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+.promo-img{
+    min-width: 100%;
+    min-height: 90%;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.promo{
+    position: relative;
+    height: 100vh;
+    background-color: var(--first-color);
+    overflow: hidden;
+}
+
+.promotion{
+        background-image: url(../assets/images/bg-namorados-3.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 100vh;
+}
+
+
+
+@media (min-width: 1400px){  
+    .promo-headline{
+        font-size: 3.2rem;
+    }
+}
+
+.promo-img{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.promo-overlay{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.promo-content{
+    z-index: 1;
+}
+
+.promo-content-width{
+    max-width: 550px;
+}
+
+.promo-headline{
+    color: var(--second-color);
+    font-weight: 800;
+    padding-top: 5rem;
+}
+
+.promotion-text{
+    background-color: white;
+    border-radius: 8px;
+}
+
+.promotion-text p{
+    color: var(--second-color);
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.button-send:hover{
+    background-color: var(--third-color);
+}
+
+
+footer{
+    background-color: var(--second-color);
+}
+
+.footer-container{
+    padding: 4rem;
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
