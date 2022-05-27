@@ -1,0 +1,224 @@
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+      <a class="navbar-brand" href="/">7BELO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#beneficios">Benefícios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testemunhos">Testemunhos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#promocao">Promoção</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#cadastro">Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <!-- section home -->
+
+    <section id="home" class="home">
+      <div class="home-overlay"></div>
+      <img src="../assets/images/background-3.png" alt="" class="home-img">
+
+      <div class="home-content h-100 container-custom position-relative">
+        <div class="d-flex h-100 align-items-center home-content-width">
+          <div class="text-white">
+            <h1 class="home-headline mb-4 display-4">Balas 7 Belo,<br> desde 1976 a melhor bala fabricada no Brasil</h1>
+            <p class="lead mb-4">A bala mais icônica do Brasil te convida para relembrar os bons momentos da infância, compartilhando com quem você mais ama.</p>   
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- section benefits -->
+
+    <section id="beneficios" class="benefits section-padding">
+      <div class="container">
+        <div class="section-header text-center container">
+          <h3 class="section-title" id="benefits-section-title">Benefícios</h3>
+          <p class="section-description" id="benefits-section-description">Que 7 Belo é gostosa, todo mundo sabe. Mas sabe o que mais você encontra dentro de um pacote de nossas balas?</p>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-4 justify-content-center">
+          <div class="col-sm-3">
+            <div class="card h-100 card-style">
+                <i class="bi bi-heart card-icon"></i>
+                <h5 class="benefits-title">Nostalgia</h5>
+                <p class="benefits-description">
+                  A bala que marcou a infância de diversas gerações. Sem dúvida alguma, só de sentir o cheirinho da nossa framboesa, as melhores memórias vão despertar em você.
+                </p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card h-100 card-style">
+              <i class="bi bi-people card-icon"></i>
+                <h5 class="benefits-title">Companhia</h5>
+                <p class="benefits-description">É como mágica! Abra um pacote e veja todos os seus amigos se reunindo ao redor de você. Não tem forma melhor do que compartilhar bons momentos, que dividindo uma 7Belo.</p>
+            </div>
+          </div>
+
+        <div class="col-sm-3">
+          <div class="card h-100 card-style">
+              <i class="bi bi-emoji-heart-eyes card-icon"></i>
+              <h5 class="benefits-title">Sabor único</h5>
+              <p class="benefits-description">Você irá ficar com água na boca, com nosso sabor incomparável. E o melhor, não vai conseguir parar na primeira!</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      </section>
+
+    <!-- section testemunials -->
+    <section id="testemunhos" class="testemunials section-padding">
+      <div class="container">
+            <div class="section-header text-center pb-5">
+              <h2 class="section-title">Testemunhos</h2>
+              <p>Ainda tem dúvidas sobre nossos sabores? Vem ver o que a galera está falando sobre a 7Belo.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-6 justify-content-center">
+              <div *ngFor="let comment of comments">
+                <div class="col">
+                  <div class="h-100">
+                  <div class="testemunials-card">
+                    <div class="testemunials-details">
+                      <div class="testemunial-img">
+                      </div>
+                      <div class="name-icon">
+                        <i class="bi bi-chat-right-heart-fill testemunial-icon"></i>
+                          <p><small class="card-name">{{comment[1].name}}</small></p>
+                      </div>
+                    </div>
+                          <p class="card-description">{{comment[1].body}}</p>
+                  </div>
+                </div>
+              </div>     
+            </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- section promotion -->
+    <section id="promocao" class="promotion section-padding">
+      <div class="container">
+      <div class="promo-overlay"></div>
+      <!-- <img src="../assets/images/bg-namorados-3.png" alt="" class="promo-img"> -->
+      <div class="promo-content h-100 container-custom-promotion position-relative justify-content-end">
+        <div class="d-flex h-100 promo-content-width justify-content-end">
+          <div class="text-white">
+            <h1 class="promo-headline mb-4 display-4">
+              Promoção<br>
+              Dia dos Namorados com 7Belo
+            </h1>
+            <div class="promotion-text mb-4">
+              <p>Quer concorrer a uma viagem para Paris com seu amor e ainda ganhar um super kit da linha 7Belo Quem Disse Berenice?<br/>
+              É só comprar um pacote de balas 7Belo, escanear o QRCode e responder à pergunta: <br><br>
+              "Por que 7Belo é o melhor presente para o dia dos namorados?"<br><br>
+               Sua resposta gera um número para o sorteio. Quanto mais pacotes, mais chances de ganhar!
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <!-- section registration -->
+    <section id="cadastro" class="registration section-padding">
+      <div class="section-grid container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Cadastro</h2>
+        <p class="section-description">Quer ficar por dentro de todas as novidades? Faça já seu cadastro!</p>
+      </div>
+
+      <div class="form">
+      <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" [formGroup]="momentForm">
+
+        <div class="mb-3">
+          <label 
+            for="exampleInputEmail1" 
+            class="form-label">
+            Nome
+          </label>
+          <input 
+            type="text" 
+            class="form-control" 
+            name="name" 
+            ngModel 
+            formControlName="name" 
+            required 
+          />
+          <div class="validation-error" *ngIf="name.invalid && userPost.submitted">
+            <p *ngIf="name.errors?.['required']" class="text-danger">Campo obrigatório</p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">E-mail</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            name="email" 
+            ngModel 
+            formControlName="email" 
+            required
+          />
+          <div class="validation-error" *ngIf="email.invalid && userPost.submitted">
+            <div *ngIf="email.errors?.['required']" class="text-danger">Campo obrigatório</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Telefone</label>
+          <input 
+            type="text" 
+            class="form-control" 
+            name="phone" 
+            ngModel
+            formControlName="phone" 
+            required
+           />
+          <div class="validation-error" *ngIf="phone.invalid && userPost.submitted">
+            <p *ngIf="phone.errors?.['required']" class="text-danger">Campo obrigatório</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary button-send">Submit</button>
+
+      </form>
+    </div>
+  </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container footer-container">
+        <p>Todas as informações presentes neste site são fictícias.</p>
+      </div>
+    </footer>
+
+</body>
